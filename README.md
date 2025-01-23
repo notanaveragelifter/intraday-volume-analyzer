@@ -23,3 +23,15 @@ Analyze intraday trading data to identify the timestamp when the cumulative trad
    ```bash
    git clone https://github.com/notanaveragelifter/intraday-volume-analyzer.git
    cd intraday-volume-analyzer
+## Output
+The script outputs timestamps for each stock when the 60-minute rolling volume exceeds the 30-day average, or `None` if no crossover occurs.
+
+### Example:
+```json
+{
+  "stock_name": "ABC Corp",
+  "date": "2024-04-19",
+  "threshold_cross_timestamp": "10:30:00"
+}
+   
+   
